@@ -1,17 +1,17 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { addIcons } from 'ionicons';
+import {
+  gameControllerOutline,
+  peopleOutline,
+  clipboardOutline,
+  rocketOutline
+} from 'ionicons/icons';
 
 import {
-  IonTabs,
-  IonTabBar,
-  IonTabButton,
-  IonIcon,
-  IonLabel,
-  IonHeader,
-  IonToolbar,
-  IonTitle,
-  IonButtons,
-  IonButton
+  IonTabs, IonTabBar, IonTabButton,
+  IonIcon, IonLabel, IonHeader,
+  IonToolbar, IonTitle, IonButtons, IonButton
 } from '@ionic/angular/standalone';
 
 @Component({
@@ -20,21 +20,21 @@ import {
   styleUrls: ['./tabs.page.scss'],
   standalone: true,
   imports: [
-    IonTabs,
-    IonTabBar,
-    IonTabButton,
-    IonIcon,
-    IonLabel,
-    IonHeader,
-    IonToolbar,
-    IonTitle,
-    IonButtons,
-    IonButton
+    IonTabs, IonTabBar, IonTabButton,
+    IonIcon, IonLabel, IonHeader,
+    IonToolbar, IonTitle, IonButtons, IonButton
   ]
 })
 export class TabsPage {
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+    addIcons({
+      gameControllerOutline,
+      peopleOutline,
+      clipboardOutline,
+      rocketOutline
+    });
+  }
 
   cerrarSesion() {
     localStorage.clear();

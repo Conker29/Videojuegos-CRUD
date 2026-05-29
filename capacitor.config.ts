@@ -1,9 +1,26 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'videojuegos-crud',
-  webDir: 'www'
+  appId: 'com.mycompany.gamesurveycampus',
+  appName: 'Game Survey Campus',
+  webDir: 'www',
+  plugins: {
+    SplashScreen: {
+      launchShowDuration: 0,
+      launchAutoHide: true,
+      backgroundColor: "#f97316",
+      androidSplashResourceName: "splash",
+      androidScaleType: "CENTER_CROP",
+      showSpinner: false,
+      androidSpinnerStyle: "large",
+      iosSpinnerStyle: "small",
+      spinnerColor: "#999999",
+      splashFullScreen: false,
+      splashImmersive: false,
+      layoutName: "launch_screen",
+      useDialog: false,
+    },
+  },
 };
 
 export default config;

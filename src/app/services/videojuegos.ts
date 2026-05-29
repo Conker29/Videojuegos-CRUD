@@ -58,15 +58,18 @@ export class VideojuegosService {
   }
 
   async actualizar(id: number, videojuego: Videojuego) {
-    const { data, error } = await this.supabase
-      .from('videojuegos')
-      .update(videojuego)
-      .eq('id', id)
-      .select();
 
-    if (error) throw error;
-    return data;
-  }
+  const { id: _, ...datos } = videojuego;
+  
+  const { data, error } = await this.supabase
+    .from('videojuegos')
+    .update(datos)
+    .eq('id', id)
+    .select();
+
+  if (error) throw error;
+  return data;
+}
 
   async eliminar(id: number) {
     const { error } = await this.supabase

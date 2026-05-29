@@ -48,7 +48,7 @@ export class PromoPage {
 
       await Share.share({
 
-        title: '🎮 GameCampus',
+        title: '🎮 GameSurveyCampus',
 
         text:
 'Estamos probando una app gamer desarrollada en Ionic. ¡Descárgala aquí!',
