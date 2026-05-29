@@ -1,0 +1,41 @@
+// For information on how to create your own theme, please refer to:
+// https://ionicframework.com/docs/theming/
+
+// Colores personalizados: Rojo, Negro y Blanco
+:root {
+  // Colores primarios
+  --ion-color-primary: #dc143c; // Rojo Carmín
+  --ion-color-primary-rgb: 220, 20, 60;
+  --ion-color-primary-contrast: #ffffff; // Blanco
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #b8102f;
+  --ion-color-primary-tint: #e0334e;
+
+  // Colores secundarios
+  --ion-color-secondary: #1a1a1a; // Negro
+  --ion-color-secondary-rgb: 26, 26, 26;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #161616;
+  --ion-color-secondary-tint: #313131;
+
+  // Colores de fondo
+  --ion-background-color: #000000; // Negro puro
+  --ion-background-color-rgb: 0, 0, 0;
+  
+  // Colores de texto
+  --ion-text-color: #ffffff; // Blanco
+  --ion-text-color-rgb: 255, 255, 255;
+  
+  // Color de contraste
+  --ion-color-contrast: #ffffff;
+}
+
+// Tema oscuro adicional
+.dark,
+[color-scheme="dark"] {
+  --ion-background-color: #000000;
+  --ion-background-color-rgb: 0, 0, 0;
+  --ion-text-color: #ffffff;
+  --ion-text-color-rgb: 255, 255, 255;
+}
