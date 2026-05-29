@@ -34,9 +34,9 @@ import { Clipboard } from '@capacitor/clipboard';
 
 export class PromoPage {
 
-  // ⚠️ CAMBIA ESTE LINK POR EL REAL DE TU APK
-  readonly enlaceDescarga =
-'https://github.com/TU-USUARIO/TU-REPO/releases/download/v1.0/app-debug.apk';
+  
+  
+readonly enlaceDescarga = 'https://github.com/Conker29/Videojuegos-CRUD/raw/main/app-debug.apk';
 
   constructor(
     private toastCtrl: ToastController
